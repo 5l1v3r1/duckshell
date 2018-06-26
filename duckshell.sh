@@ -2,12 +2,28 @@
 #Coded by @thelinuxchoice
 #Github: https://github.com/thelinuxchoice/duckshell
 
+banner() {
+
+printf "\e[1;77m  _____             _     _____ _          _ _  \e[0m\n"
+printf "\e[1;77m |  __ \           | |   / ____| |        | | | \e[0m\n"
+printf "\e[1;77m | |  | |_   _  ___| | _| (___ | |__   ___| | | \e[0m\n"
+printf "\e[1;77m | |  | | | | |/ __| |/ /\___ \| '_ \ / _ \ | | \e[0m\n"
+printf "\e[1;77m | |__| | |_| | (__|   < ____) | | | |  __/ | | \e[0m\n"
+printf "\e[1;77m |_____/ \__,_|\___|_|\_\_____/|_| |_|\___|_|_|v1.0 \e[0m\n"
+printf "\n"
+printf "\e[1;32m   .:.:. DuckDuckGo Instant Answer API .:.:.\e[0m\n"
+printf "\e[1;93m           coded by @thelinuxchoice   \e[0m\n"
+printf "\n"  
+
+}
+
+
 str="'$*'"
 IFS=$'\n'
 str1=$(echo $str)
 
 if [[ $# -le 0 ]]; then
-
+banner
 printf "\e[1;92m[*] Usage:\e[0m\e[1;77m ./duckshell.sh <your search>\e[0m\n"
 else
 
